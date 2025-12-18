@@ -1,36 +1,7 @@
 # CS340
-# Grazioso Salvare Animal Shelter Database Interface
+Writing programs that are maintainable, readable, and adaptable requires clear structure, consistent naming, and modular design. In Project One, I built a CRUD Python module that separated database operations into reusable functions. This design paid off in Project Two, because I could connect dashboard widgets directly to the database without rewriting logic each time. The advantage of working this way is that the module becomes a foundation I can reuse in future projects—whether for another dashboard, a web application, or even a mobile app that needs to interact with a database. By keeping the code modular and well-documented, I ensure that it can be extended or modified easily as requirements change.
 
-## Project Overview
+Approaching problems as a computer scientist means breaking them down into smaller, solvable pieces and thinking about both the immediate requirements and the long-term scalability. For Grazioso Salvare’s project, I started by analyzing the database structure and identifying what data the client needed to see in the dashboard. Compared to earlier assignments, this project required me to think more like a consultant: not just solving a technical problem, but aligning my solution with a client’s business goals. In the future, I would continue using strategies like entity-relationship modeling, iterative prototyping, and user feedback loops to design databases that meet client requests efficiently and accurately.
 
-This project delivers a reusable Python module that enables secure CRUD (Create, Read, Update, Delete) operations on the Grazioso Salvare animal shelter database. The module supports staff in managing animal records and identifying dogs suitable for search-and-rescue training.
-
----
-
-## 🛠️ Technology Stack
-
-- **Language**: Python 3
-- **Database**: MongoDB
-- **Driver**: PyMongo  
-  PyMongo is the official MongoDB driver for Python. It was chosen for its reliability, full API support, and seamless integration with Python applications.
-
----
-
-## 🐍 Module Usage
-
-### File: `animal_crud.py`
-
-This module defines a class `AnimalShelter` that encapsulates all CRUD functionality. It is designed for reuse in other Python scripts or notebooks.
-
-### Class: `AnimalShelter`
-
-#### Constructor
-```python
-AnimalShelter(username, password, db_name='aac', collection_name='animals')
-Connects to MongoDB using the provided credentials.
-
-Defaults to the aac database and animals collection.
-Demonstrates the CRUD functions.
-Imported aac_shelter_outcomes.csv into the aac database using MongoDB shell.
-Verified creation and authentication of aacuser with readWrite access to the aac database.
+Computer scientists design systems that make information accessible, reliable, and actionable. This matters because organizations depend on data-driven decisions to operate effectively. My work on Grazioso Salvare’s dashboard helps the company by turning raw data into clear visual insights. Instead of manually searching through records, employees can interact with widgets and charts to quickly find the information they need. This improves efficiency, reduces errors, and ultimately supports the company’s mission. Projects like this demonstrate how computer science bridges technical solutions with real-world impact, enabling companies to work smarter and achieve their goals.
 
